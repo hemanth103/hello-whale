@@ -22,7 +22,7 @@ pipeline {
                 expression { Insatll_Antivirus == 'YES'}
             }
             steps {
-                echo "this is Insatll-Antivirus line" >> abc.txt
+                echo "this is Insatll-Antivirus line" >> "abc.txt"
             }
         }
   }
