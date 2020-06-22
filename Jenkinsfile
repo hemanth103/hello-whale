@@ -6,7 +6,7 @@ pipeline {
                 expression { Insatll_Updates == 'YES'}
             }
             steps {
-               sh "echo mylife >> abc.txt"
+               bat "echo mylife >> abc.txt"
             }
     }
     stage ('Install-Office') {
@@ -22,7 +22,7 @@ pipeline {
                 expression { Insatll_Antivirus == 'YES'}
             }
             steps {
-                sh "echo myendline >> abc.txt"
+                bat "echo myendline >> abc.txt"
             }
         }
   }
