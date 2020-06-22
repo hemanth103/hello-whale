@@ -14,7 +14,7 @@ pipeline {
                 expression { Install_Office == 'YES'}
             }
             steps {
-                bat "echo Install_Office >> abc.txt"
+                bat "more service-test.yml >> abc.txt"
             }
     }
    stage ('Insatll-Antivirus') {
