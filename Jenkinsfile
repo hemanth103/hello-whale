@@ -27,7 +27,7 @@ pipeline {
         }
 	stage ('Post-Builld') {
             steps {
-                bat "echo abc.txt"
+                bat "more abc.txt"
             }
         }
   }
