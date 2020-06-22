@@ -25,5 +25,10 @@ pipeline {
                 bat "echo myendline >> abc.txt"
             }
         }
+	stage ('Post-Builld') {
+            steps {
+                bat "echo abc.txt"
+            }
+        }
   }
 }
